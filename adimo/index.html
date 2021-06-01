@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <title>Adimo</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a href="#" class="navbar-brand ml-3" id="logo">
+            <img src="./img/logo-adimo.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="logo">
+            ADIMO</a>
+        <div class="container d-flex justify-content-end">
+          <ul class="navbar-nav p-2">
+            <li class="active nav-item pr-3">
+              <a href="#carrossel" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item pr-3">
+                <a href="#sobre" class="nav-link">Sobre</a>
+              </li>
+            <li class="nav-item pr-3">
+              <a href="#" class="nav-link">Catálogo</a>
+            </li>
+            <li class="nav-item pr-3">
+              <a href="#" class="nav-link">Minha Lista</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <div id="carrossel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carrossel" data-slide-to="0" class="active"></li>
+            <li data-target="#carrossel" data-slide-to="1"></li>
+            <li data-target="#carrossel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" data-interval="5000">
+            <div class="carousel-item active">
+              <!--https://br.freepik.com/fotos/fundo-->
+              <img
+                src="./img/residential-brick-house.jpg"
+                alt="Residencia de Tijolos"
+                class="d-block w-100"
+              />
+              <div class="carousel-caption d-none d-md-block bg-dark carousel-card">
+                <h5>Lorem ipsum</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nesciunt optio fuga libero reprehenderit non accusantium id! Id itaque autem quos ipsam commodi illo quo odit, quas, expedita eos recusandae?</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!--https://br.freepik.com/fotos/carro-->
+              <img
+                src="./img/house-isolated-in-the-field.jpg"
+                alt="Residencia de Tijolos"
+                class="d-block w-100"
+              />
+              <div class="carousel-caption d-none d-md-block bg-dark carousel-card">
+                <h5>Lorem ipsum</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nesciunt optio fuga libero reprehenderit non accusantium id! Id itaque autem quos ipsam commodi illo quo odit, quas, expedita eos recusandae?</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!--https://br.freepik.com/fotos/maquete-->
+              <img
+                src="./img/modern-interior-room-with-furniture-3d-rendering.jpg"
+                alt="Residencia de Tijolos"
+                class="d-block w-100"
+              />
+              <div class="carousel-caption d-none d-md-block bg-dark carousel-card">
+                <h5>Lorem ipsum</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nesciunt optio fuga libero reprehenderit non accusantium id! Id itaque autem quos ipsam commodi illo quo odit, quas, expedita eos recusandae?</p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carrossel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carrossel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+      </div>
+      <div class="container" id="sobre">
+        <div class="bg-dark"></div>    
+      </div>
+    </main>
+  </body>
+</html>

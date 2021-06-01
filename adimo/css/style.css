@@ -1,0 +1,15 @@
+.carousel-item img{
+    height: 95vh;
+}
+.carousel-card{
+    opacity: 85%;
+    border-radius: 15px;
+}
+:root{
+    
+}
+#logo{
+    width: 30px;
+    height: 30px;
+    opacity: 95%;
+}
