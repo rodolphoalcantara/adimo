@@ -1,23 +1,44 @@
-.carousel-item img{
-    height: 95vh;
+.carousel-item img {
+  height: 95vh;
 }
-.carousel-card{
-    opacity: 85%;
-    border-radius: 15px;
+.carousel-card {
+  opacity: 85%;
+  border-radius: 15px;
 }
-:root{
-    
+#logo {
+  width: 30px;
+  height: 30px;
+  opacity: 95%;
 }
-#logo{
-    width: 30px;
-    height: 30px;
-    opacity: 95%;
+#logo-sobre {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
 }
-#logo-sobre{
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
+#catalogo {
+  background-color: rgb(200, 200, 200);
 }
-#catalogo{
-    background-color: rgb(200, 200, 200);
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+#checkboxImg {
+  position: absolute;
+  right: 0;
+}
+.hidden {
+  display: none;
+}
+.opened {
+  display: inline-block;
+}
+.painel li:nth-child(n + 4) {
+  display: none;
+}
+.painel-aberto li:nth-child(n + 4) {
+  display: inline-block;
 }
