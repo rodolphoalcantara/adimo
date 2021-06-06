@@ -18,14 +18,7 @@
 #catalogo {
   background-color: rgb(200, 200, 200);
 }
-.card-columns {
-  @include media-breakpoint-only(lg) {
-    column-count: 4;
-  }
-  @include media-breakpoint-only(xl) {
-    column-count: 5;
-  }
-}
+
 #checkboxImg {
   position: absolute;
   right: 0;
@@ -41,4 +34,24 @@
 }
 .painel-aberto li:nth-child(n + 4) {
   display: inline-block;
+}
+
+@media(max-width: 800px){
+  .card-columns {
+    column-count: 2;
+  }
+}
+@media(max-width: 630px){
+  .card-columns {
+    column-count: 1;
+  }
+
+  #carrossel{
+    display: none;
+  }
+}
+@media(min-width: 1024px){
+  .card-columns {
+    column-count: 3;
+  }
 }
