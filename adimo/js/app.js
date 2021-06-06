@@ -1,18 +1,23 @@
-$("nav a").click(function (e) {
+$("nav a").click(function navigate(e) {
   e.preventDefault();
   var id = $(this).attr("href");
-  var targetOffset = $(id).offset().top;
-  var menuHeight = $("nav").innerHeight();
+  if (id != "login.html") {
+    var targetOffset = $(id).offset().top;
+    var menuHeight = $("nav").innerHeight();
 
-  console.log(id);
+    console.log(id);
 
-  $("html, body").animate(
-    {
-      scrollTop: targetOffset - menuHeight,
-    },
-    500
-  );
+    $("html, body").animate(
+      {
+        scrollTop: targetOffset - menuHeight,
+      },
+      500
+    );
+  }else{
+    window.location.href = 'login.html';
+  }
 });
+
 
 $("#btnMais").click(function () {
   $(".painel").addClass("painel-aberto").removeClass("painel");

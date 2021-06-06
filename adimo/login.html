@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="./js/jQuery-3.6.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Adimo</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="#home" class="navbar-brand ml-3" id="logo">
+          <img
+            id="logo"
+            src="./img/logo-adimo.png"
+            class="d-inline-block align-top mr-1"
+            alt="logo"
+          />
+          ADIMO</a
+        >
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+      <div class="container">
+        <h2 class="text-center" id="title">ADIMO</h2>
+        <br />
+        <hr />
+        <div class="row">
+          <div class="col-md-5">
+            <form role="form" method="post" action="register.php">
+              <fieldset>
+                <p class="text-uppercase pull-center">Cadastre-se</p>
+                <div class="form-group">
+                  <input
+                    class="form-control input-lg"
+                    name="nome_completo"
+                    required=""
+                    type="text"
+                    placeholder="nome completo"
+                    id="nome_completo"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control input-lg"
+                    placeholder="Informe seu e-mail"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control input-lg"
+                    placeholder="Senha"
+                    required=""
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    name="password2"
+                    id="password2"
+                    class="form-control input-lg"
+                    placeholder="Confirme a sua senha"
+                    required=""
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    id="cpf"
+                    name="cpf"
+                    placeholder="CPF Apenas números"
+                    class="form-control input-md"
+                    required=""
+                    type="text"
+                    maxlength="11"
+                    pattern="[0-9]+$"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="data_pgto"
+                    >Informe a sua data de nascimento:</label
+                  >
+                  <input
+                    class="form-control"
+                    name="data_pgto"
+                    required=""
+                    type="date"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="conheceu">Como conheceu nosso site?</label><br />
+                  <input name="google" type="checkbox" value="masculino" />
+                  Google<br />
+                  <input name="amigos" type="checkbox" value="feminino" />
+                  Amigos<br />
+                  <input
+                    name="revistas_jornais"
+                    type="checkbox"
+                    value="feminino"
+                  />
+                  Revistas e Jornais
+                </div>
+
+                <div class="form-check">
+                  <br />
+                </div>
+                <div>
+                  <input
+                    type="submit"
+                    class="btn btn-lg btn-primary"
+                    value="Registrar"
+                  />
+                </div>
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="col-md-2">
+            <!-------null------>
+          </div>
+
+          <div class="col-md-5">
+            <form role="form">
+              <fieldset>
+                <p class="text-uppercase">Faça login usando sua conta:</p>
+
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="username"
+                    id="username"
+                    class="form-control input-lg"
+                    placeholder="Informe seu e-mail"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-control input-lg"
+                    placeholder="Senha"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="submit"
+                    class="btn btn-lg btn-primary"
+                    value="Entrar"
+                  />
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
+
+    <footer class="footer mt-auto py-4 bg-dark fixed-bottom">
+      <div class="container d-flex flex-row">
+        <img
+          src="./img/logo-adimo-expanded.png"
+          alt="logo"
+          width="80px"
+          height="80px"
+          style="border-radius: 100%"
+        />
+        <div class="container align-self-center text-center">
+          <p class="text-light">
+            Página desenvolvida por: Aurélio Bispo, Felipe Fabrini, Gessione
+            Freitas e Rodolpho Alcântara
+          </p>
+          <p class="text-light">
+            <small><strong>Programação Web</strong></small
+            ><br />
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
