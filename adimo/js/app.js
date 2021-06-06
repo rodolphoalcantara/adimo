@@ -29,13 +29,50 @@ $("#btnMenos").click(function () {
   $(".painel-aberto").addClass("painel").removeClass("painel-aberto");
   $("#btnMenos").addClass("hidden").removeClass("opened");
   $("#btnMais").addClass("opened").removeClass("hidden");
+
+  $("html, body").animate(
+    {
+      scrollTop: $("#catalogo").offset().top - $("nav").innerHeight(),
+    },
+    500
+  );
 });
 
 $("#agendar").click(function () {
-  var checado = $('#catalogo').find("input[name='checkboxImg']:checked").length > 0;
+  var checado =
+    $("#catalogo").find("input[name='checkboxImg']:checked").length > 0;
   if (!checado) {
     alert("Você deve selecionar pelo menos um imóvel!");
   } else {
-    alert("Obrigado por agendar uma visita");
+    $("#addUsuarioModal").modal("show");
+  }
+});
+
+$("#modalSalvar").click(function (e) {
+  e.preventDefault;
+
+  $("#addUsuarioModal input").each(function () {
+    if ($(this).val() === "") {
+      $(this).addClass("is-invalid");
+      if ($(this).hasClass("is-valid")) {
+        $(this).removeClass("is-valid");
+      }
+    } else {
+      $(this).addClass("is-valid");
+      if ($(this).hasClass("is-invalid")) {
+        $(this).removeClass("is-invalid");
+      }
+    }
+  });
+
+  var valid = true;
+  $("#addUsuarioModal input").each(function () {
+    if ($(this).hasClass("is-invalid")) valid = false;
+    return valid;
+  });
+
+  if (valid) {
+    alert("Obrigado por informar seus dados");
+    $("#addUsuarioModal").modal("hide");
   }
 });

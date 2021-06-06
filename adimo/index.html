@@ -6,52 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <script src="./js/jQuery-3.6.0.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <title>Adimo</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a href="#home" class="navbar-brand ml-3" id="logo">
-          <img
-            id="logo"
-            src="./img/logo-adimo.png"
-            class="d-inline-block align-top mr-1"
-            alt="logo"
-          />
-          ADIMO</a
-        >
-        <div class="container d-flex justify-content-end">
-          <ul class="navbar-nav p-2">
-            <li class="active nav-item pr-3">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item pr-3">
-              <a href="#sobre" class="nav-link">Sobre</a>
-            </li>
-            <li class="nav-item pr-3">
-              <a href="#catalogo" class="nav-link">Catálogo</a>
-            </li>
-            <li class="nav-item pr-3">
-              <a href="#" class="nav-link">Minha Lista</a>
-            </li>
-            <li class="nav-item pr-3">
-              <a href="login.html" class="nav-link">Login</a>
-            </li>
-          </ul>
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#links-menu"
+            >
+              <i class="material-icons">menu</i>
+            </button>
+          </div>
+
+          <div class="container navbar-collapse collapse">
+          <a href="index.html" class="navbar-brand ml-3" id="logo">
+            <img
+              id="logo"
+              src="./img/logo-adimo.png"
+              class="d-inline-block align-top mr-1"
+              alt="logo"
+            />
+            ADIMO</a
+          >
+        </div>
+
+          <div class="container d-flex justify-content-end">
+            <ul
+              id="links-menu"
+              class="navbar-nav navbar-right p-2 collapse navbar-collapse"
+            >
+              <li class="active nav-item pr-3">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item pr-3">
+                <a href="#sobre" class="nav-link">Sobre</a>
+              </li>
+              <li class="nav-item pr-3">
+                <a href="#catalogo" class="nav-link">Catálogo</a>
+              </li>
+              <li class="nav-item pr-3">
+                <a href="#" class="nav-link">Minha Lista</a>
+              </li>
+              <li class="nav-item pr-3">
+                <a href="login.html" class="nav-link">Login</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <main>
-      <div id="home">
-        <div class="carousel slide" data-ride="carousel">
+      <section id="home">
+        <div class="carousel slide" data-ride="carousel" id="carrossel">
           <ol class="carousel-indicators">
-            <li data-target="#home" data-slide-to="0" class="active"></li>
-            <li data-target="#home" data-slide-to="1"></li>
-            <li data-target="#home" data-slide-to="2"></li>
+            <li data-target="#carrossel" data-slide-to="0" class="active"></li>
+            <li data-target="#carrossel" data-slide-to="1"></li>
+            <li data-target="#carrossel" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner" data-interval="5000">
             <div class="carousel-item active">
@@ -114,7 +137,7 @@
           </div>
           <a
             class="carousel-control-prev"
-            href="#home"
+            href="#carrossel"
             role="button"
             data-slide="prev"
           >
@@ -122,8 +145,8 @@
             <span class="sr-only">Anterior</span>
           </a>
           <a
+            href="#carrossel"
             class="carousel-control-next"
-            href="#home"
             role="button"
             data-slide="next"
           >
@@ -131,8 +154,8 @@
             <span class="sr-only">Próximo</span>
           </a>
         </div>
-      </div>
-      <div id="sobre">
+      </section>
+      <section id="sobre">
         <div class="container d-flex align-items-center" style="height: 500px">
           <div class="d-flex">
             <div class="container">
@@ -145,17 +168,17 @@
             </div>
             <div class="container d-flex flex-column" style="height: 300px">
               <h1 class="text-center mb-4">Sobre</h1>
+              <p>ICMNF</p>
               <p>
-                ICMNF
-              </p>
-              <p>
-                A empresa Instituto corpo e mente naga freitas é especialista na construção de imóveis há mais de 20 anos. Temos imóveis de todas as categorias e financiamos sua casa em até 35 anos
+                A empresa Instituto corpo e mente naga freitas é especialista na
+                construção de imóveis há mais de 20 anos. Temos imóveis de todas
+                as categorias e financiamos sua casa em até 35 anos
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="p-5" id="catalogo">
+      </section>
+      <section class="p-5" id="catalogo">
         <div class="container painel">
           <div class="container mb-5">
             <h1 class="text-center">Catálogo</h1>
@@ -389,23 +412,24 @@
               </li>
             </ul>
           </div>
-          <div class="row justify-content-around mt-5">
-            <button type="button" class="btn btn-secondary opened" id="btnMais">
-              Mostrar mais
-            </button>
-            <button
-              type="button"
-              class="btn btn-secondary hidden"
-              id="btnMenos"
-            >
-              Mostrar menos
-            </button>
-            <button type="button" class="btn btn-primary" id="agendar" data-toggle="modal" data-target="#addUsuarioModel">
-              Agendar visita
-            </button>
-          </div>
         </div>
-      </div>
+        <div class="row justify-content-around mt-4">
+          <button type="button" class="btn btn-secondary opened" id="btnMais">
+            Mostrar mais
+          </button>
+          <button type="button" class="btn btn-secondary hidden" id="btnMenos">
+            Mostrar menos
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            id="agendar"
+            data-toggle="modal"
+          >
+            Agendar visita
+          </button>
+        </div>
+      </section>
     </main>
     <footer class="footer mt-auto py-4 bg-dark">
       <div class="container d-flex flex-row">
@@ -428,61 +452,100 @@
         </div>
       </div>
     </footer>
-    <script src="./js/app.js"></script>
-    
-<!-- TELA VOANDO AQUI TRUTA -->
-      <div class="modal fade" id="addUsuarioModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Reserva</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
 
-              <form action="#" class="form-horizontal">
-					<fieldset>
-						<legend>Dados Pessoais</legend>
-						<div class="form-group">
-							<label for="nome" class="col-sm-2 control-label">Nome</label>
-							<div >
-								<input type="text" class="form-control" id="nome">
-							</div>
-						</div>	
-		
-						
-						<div class="form-group"><label for="data_pgto">Informe a sua data de nascimento:</label> <input class="form-control" name="data_pgto" required="" type="date"></div>
-					</fieldset>
-					
-					<fieldset>
-						<legend>Contato</legend>
-						<div class="form-group">
-							<label for="email" class="col-sm-2 control-label">Email</label>
-							<div>
-								<input type="email" class="form-control" id="email">
-							</div>
-						</div>
-						
-						<div class="form-group">
-							<label for="telefone" class="col-sm-2 control-label">Telefone</label>
-							<div>
-								<input type="tel" class="form-control" id="telefone">
-							</div>
-						</div>
-					</fieldset>						
-					
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="addUsuarioModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Reserva</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Fechar"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="#" class="form-horizontal">
+              <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="form-group">
+                  <label for="nome" class="col-sm-2 control-label">Nome</label>
+                  <div>
+                    <input type="text" class="form-control" id="nome" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="data_nasc"
+                    >Informe a sua data de nascimento:</label
+                  >
+                  <input
+                    class="form-control"
+                    name="data_nasc"
+                    required
+                    type="date"
+                    id="dataNasc"
+                  />
+                </div>
+              </fieldset>
 
-				</form>
+              <fieldset>
+                <legend>Contato</legend>
+                <div class="form-group">
+                  <label for="email" class="col-sm-2 control-label" required
+                    >Email</label
+                  >
+                  <div>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                  </div>
+                </div>
 
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-              <button type="button" class="btn btn-primary">Salvar</button>
-            </div>
+                <div class="form-group">
+                  <label for="telefone" class="col-sm-2 control-label" required
+                    >Telefone</label
+                  >
+                  <div>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="telefone"
+                      required
+                    />
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Fechar
+            </button>
+            <button type="submit" class="btn btn-primary" id="modalSalvar">
+              Salvar
+            </button>
           </div>
         </div>
-      </div>    
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
   </body>
 </html>
