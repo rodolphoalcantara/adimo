@@ -6,6 +6,7 @@
   border-radius: 15px;
 }
 #logo {
+  display: none;
   width: 30px;
   height: 30px;
   opacity: 95%;
@@ -35,6 +36,9 @@
 .painel-aberto li:nth-child(n + 4) {
   display: inline-block;
 }
+#addUsuarioModal{
+  width: 100vw;
+}
 
 @media(max-width: 800px){
   .card-columns {
@@ -50,8 +54,11 @@
     display: none;
   }
 }
-@media(min-width: 1024px){
+@media(min-width: 992px){
   .card-columns {
     column-count: 3;
+  }
+  #logo{
+    display: inline-block;
   }
 }

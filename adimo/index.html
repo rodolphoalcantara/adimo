@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <script src="./js/jQuery-3.6.0.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
@@ -15,33 +19,52 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a href="index.html" class="navbar-brand ml-3" id="logo">
-          <img
-            id="logo"
-            src="./img/logo-adimo.png"
-            class="d-inline-block align-top mr-1"
-            alt="logo"
-          />
-          ADIMO</a
-        >
-        <div class="container d-flex justify-content-end">
-          <ul class="navbar-nav p-2">
-            <li class="active nav-item pr-3">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item pr-3">
-              <a href="#sobre" class="nav-link">Sobre</a>
-            </li>
-            <li class="nav-item pr-3">
-              <a href="#catalogo" class="nav-link">Catálogo</a>
-            </li>
-            <li class="nav-item pr-3">
-              <a href="#" class="nav-link">Minha Lista</a>
-            </li>
-            <li class="nav-item pr-3">
-              <a href="login.html" class="nav-link">Login</a>
-            </li>
-          </ul>
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#links-menu"
+            >
+              <i class="material-icons">menu</i>
+            </button>
+          </div>
+
+          <div class="container navbar-collapse collapse">
+          <a href="index.html" class="navbar-brand ml-3" id="logo">
+            <img
+              id="logo"
+              src="./img/logo-adimo.png"
+              class="d-inline-block align-top mr-1"
+              alt="logo"
+            />
+            ADIMO</a
+          >
+        </div>
+
+          <div class="container d-flex justify-content-end">
+            <ul
+              id="links-menu"
+              class="navbar-nav navbar-right p-2 collapse navbar-collapse"
+            >
+              <li class="active nav-item pr-3">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item pr-3">
+                <a href="#sobre" class="nav-link">Sobre</a>
+              </li>
+              <li class="nav-item pr-3">
+                <a href="#catalogo" class="nav-link">Catálogo</a>
+              </li>
+              <li class="nav-item pr-3">
+                <a href="#" class="nav-link">Minha Lista</a>
+              </li>
+              <li class="nav-item pr-3">
+                <a href="login.html" class="nav-link">Login</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -390,7 +413,7 @@
             </ul>
           </div>
         </div>
-        <div class="row justify-content-around mt-5">
+        <div class="row justify-content-around mt-4">
           <button type="button" class="btn btn-secondary opened" id="btnMais">
             Mostrar mais
           </button>
@@ -429,91 +452,8 @@
         </div>
       </div>
     </footer>
-    <div class="container">
-      <div class="row">
-        <h1>Cadastre-se</h1>
-        <hr />
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          Cadastre seus dados no formulário ao lado para finalizar sua compra
-          conosco!
-        </div>
-        <div class="col-md-9">
-          <form>
-            <div class="form-group">
-              <label for="nome_completo">* Digite seu nome completo:</label>
-              <input
-                class="form-control"
-                name="nome_completo"
-                required=""
-                type="text"
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">* Informe seu e-mail:</label>
-              <input
-                class="form-control"
-                name="mail"
-                required=""
-                type="email"
-              />
-            </div>
-            <p></p>
-            <div class="container-fluid">
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label for="idade">Informe sua idade:</label>
-                  <input
-                    class="form-control"
-                    max="110"
-                    min="18"
-                    name="idade"
-                    required=""
-                    type="number"
-                  />
-                </div>
-                <br />
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label for="data_pgto"
-                    >Informe a sua data de nascimento:</label
-                  >
-                  <input
-                    class="form-control"
-                    name="data_pgto"
-                    required=""
-                    type="date"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="conheceu">Como conheceu nosso site?</label><br />
-                  <input name="google" type="checkbox" value="masculino" />
-                  Google<br />
-                  <input name="amigos" type="checkbox" value="feminino" />
-                  Amigos<br />
-                  <input
-                    name="revistas_jornais"
-                    type="checkbox"
-                    value="feminino"
-                  />
-                  Revistas e Jornais
-                </div>
-              </div>
-              <p></p>
-              <div class="form-group" align="center">
-                <button class="btn btn-lg btn-success" type="submit">
-                  Enviar dados
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
 
-    <!-- TELA VOANDO AQUI TRUTA -->
+    <!-- MODAL -->
     <div
       class="modal fade"
       id="addUsuarioModal"
