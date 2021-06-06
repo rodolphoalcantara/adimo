@@ -18,6 +18,7 @@ $("nav a").click(function navigate(e) {
   }
 });
 
+
 $("#btnMais").click(function () {
   $(".painel").addClass("painel-aberto").removeClass("painel");
   $("#btnMais").addClass("hidden").removeClass("opened");

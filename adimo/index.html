@@ -15,7 +15,7 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a href="#home" class="navbar-brand ml-3" id="logo">
+        <a href="index.html" class="navbar-brand ml-3" id="logo">
           <img
             id="logo"
             src="./img/logo-adimo.png"
@@ -37,6 +37,9 @@
             </li>
             <li class="nav-item pr-3">
               <a href="#" class="nav-link">Minha Lista</a>
+            </li>
+            <li class="nav-item pr-3">
+              <a href="login.html" class="nav-link">Login</a>
             </li>
           </ul>
         </div>
@@ -118,7 +121,8 @@
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Anterior</span>
           </a>
-          <a href="#carrossel"
+          <a
+            href="#carrossel"
             class="carousel-control-next"
             role="button"
             data-slide="next"
@@ -390,11 +394,7 @@
           <button type="button" class="btn btn-secondary opened" id="btnMais">
             Mostrar mais
           </button>
-          <button
-            type="button"
-            class="btn btn-secondary hidden"
-            id="btnMenos"
-          >
+          <button type="button" class="btn btn-secondary hidden" id="btnMenos">
             Mostrar menos
           </button>
           <button
@@ -545,7 +545,6 @@
                     <input type="text" class="form-control" id="nome" />
                   </div>
                 </div>
-
                 <div class="form-group">
                   <label for="data_nasc"
                     >Informe a sua data de nascimento:</label
@@ -563,9 +562,16 @@
               <fieldset>
                 <legend>Contato</legend>
                 <div class="form-group">
-                  <label for="email" class="col-sm-2 control-label" required >Email</label>
+                  <label for="email" class="col-sm-2 control-label" required
+                    >Email</label
+                  >
                   <div>
-                    <input type="email" class="form-control" id="email" required />
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
                   </div>
                 </div>
 
@@ -574,7 +580,12 @@
                     >Telefone</label
                   >
                   <div>
-                    <input type="tel" class="form-control" id="telefone" required />
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="telefone"
+                      required
+                    />
                   </div>
                 </div>
               </fieldset>
@@ -595,7 +606,6 @@
         </div>
       </div>
     </div>
-
     <script src="./js/app.js"></script>
   </body>
 </html>
