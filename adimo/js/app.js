@@ -5,19 +5,16 @@ $("nav a").click(function navigate(e) {
     var targetOffset = $(id).offset().top;
     var menuHeight = $("nav").innerHeight();
 
-    console.log(id);
-
     $("html, body").animate(
       {
         scrollTop: targetOffset - menuHeight,
       },
       500
     );
-  }else{
-    window.location.href = 'login.html';
+  } else {
+      window.location.href = "login.html";
   }
 });
-
 
 $("#btnMais").click(function () {
   $(".painel").addClass("painel-aberto").removeClass("painel");
