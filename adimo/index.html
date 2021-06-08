@@ -14,7 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-    <title>Adimo</title>
+    <title>Adimo - Home</title>
   </head>
   <body>
     <header>
@@ -32,7 +32,7 @@
           </div>
 
           <div class="container navbar-collapse collapse">
-          <a href="index.html" class="navbar-brand ml-3" id="logo">
+          <a href="#home" class="navbar-brand ml-3" id="logo">
             <img
               id="logo"
               src="./img/logo-adimo.png"
@@ -156,9 +156,9 @@
         </div>
       </section>
       <section id="sobre">
-        <div class="container d-flex align-items-center" style="height: 500px">
-          <div class="d-flex">
-            <div class="container">
+        <div class="container d-flex align-items-center" id="sobre-container">
+          <div class="d-flex" id="sobre-section">
+            <div class="container" id="img-sobre">
               <!--Logo developed by ArthurBauer https://dribbble.com/shots/3427872-A-vol-1 -->
               <img
                 src="./img/logo-adimo-expanded.png"
@@ -166,7 +166,7 @@
                 id="logo-sobre"
               />
             </div>
-            <div class="container d-flex flex-column" style="height: 300px">
+            <div class="container d-flex flex-column" style="height: 300px" id="content-sobre">
               <h1 class="text-center mb-4">Sobre</h1>
               <p>ICMNF</p>
               <p>
@@ -178,12 +178,12 @@
           </div>
         </div>
       </section>
-      <section class="p-5" id="catalogo">
+      <section class="p-3" id="catalogo">
         <div class="container painel">
-          <div class="container mb-5">
+          <div class="container mb-3">
             <h1 class="text-center">Catálogo</h1>
           </div>
-          <div class="card-columns">
+          <div class="card-columns text-center">
             <ul>
               <li>
                 <div class="card">
@@ -431,7 +431,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer mt-auto py-4 bg-dark">
+    <footer class="footer mt-auto py-2 bg-dark">
       <div class="container d-flex flex-row">
         <img
           src="./img/logo-adimo-expanded.png"

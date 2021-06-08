@@ -10,32 +10,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="./js/jQuery-3.6.0.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <title>Adimo</title>
+    <title>Adimo - Login</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="index.html" class="navbar-brand ml-3" id="logo">
-          <img
-            id="logo"
-            src="./img/logo-adimo.png"
-            class="d-inline-block align-top mr-1"
-            alt="logo"
-          />
-          ADIMO</a
-        >
+        <div class="container">
+          <div class="container navbar-header">
+            <a href="index.html" class="navbar-brand ml-3" >
+              <img
+                src="./img/logo-adimo.png"
+                class="d-inline-block align-top mr-1"
+                alt="logo"
+                style="width: 30px; height: 30px; opacity: 95%;"
+              />
+              ADIMO</a
+            >
+          </div>
+        </div>
       </nav>
     </header>
 
     <div class="container-fluid">
-      <div class="container">
-        <h2 class="text-center" id="title">ADIMO</h2>
-        <br />
+      <div class="container" id="login-signin-container">
         <hr />
         <div class="row">
           <div class="col-md-5">
-            <form role="form" method="post" action="register.php">
-              <fieldset>
+            <form role="form" method="post" >
+              <fieldset id="cadastro">
                 <p class="text-uppercase pull-center">Cadastre-se</p>
                 <div class="form-group">
                   <input
@@ -82,7 +84,7 @@
                   <input
                     id="cpf"
                     name="cpf"
-                    placeholder="CPF Apenas números"
+                    placeholder="CPF (Apenas números)"
                     class="form-control input-md"
                     required=""
                     type="text"
@@ -118,7 +120,7 @@
                 </div>
 
                 <div class="form-check">
-                  <br />
+                  
                 </div>
                 <div>
                   <input
@@ -137,7 +139,7 @@
 
           <div class="col-md-5">
             <form role="form">
-              <fieldset>
+              <fieldset id="registro">
                 <p class="text-uppercase">Faça login usando sua conta:</p>
 
                 <div class="form-group">
@@ -173,7 +175,7 @@
       <br />
     </div>
 
-    <footer class="footer mt-auto py-4 bg-dark fixed-bottom">
+    <footer class="footer mt-auto py-2 bg-dark">
       <div class="container d-flex flex-row">
         <img
           src="./img/logo-adimo-expanded.png"
@@ -194,6 +196,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/app.js"></script>
+    <script src="./js/login.js"></script>
   </body>
 </html>
