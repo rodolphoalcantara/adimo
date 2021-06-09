@@ -51,7 +51,15 @@
               <small class="text-muted">Atualizados 3 minutos atrás</small>
             </p>
 
-            <button type="button" class="btn btn-primary">Reservar</button>
+            <button
+              type="button"
+              id="lista"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#listaModal"
+            >
+              Reservar
+            </button>
           </div>
         </div>
         <div class="card">
@@ -73,7 +81,15 @@
               <small class="text-muted">Atualizados 3 minutos atrás</small>
             </p>
 
-            <button type="button" class="btn btn-primary">Reservar</button>
+            <button
+              type="button"
+              id="lista"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#listaModal"
+            >
+              Reservar
+            </button>
           </div>
         </div>
         <div class="card">
@@ -95,11 +111,62 @@
             <p class="card-text">
               <small class="text-muted">Atualizados 3 minutos atrás</small>
             </p>
-            <button type="button" class="btn btn-primary">Reservar</button>
+            <button
+              type="button"
+              id="lista"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#listaModal"
+            >
+              Reservar
+            </button>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="listaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="listaModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Confirmado !</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Obrigado pela preferência, sua requisição da reserva será
+            encaminhada para um de nossos analistas e você receberá uma resposta
+            em breve
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Voltar
+            </button>
+            <button type="button" id="mod" class="btn btn-primary">
+              Voltar para pagina inicial
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer mt-auto py-2 bg-dark">
       <div class="container d-flex flex-row">
@@ -122,6 +189,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/login.js"></script>
+    <script src="./js/lista.js"></script>
   </body>
 </html>
