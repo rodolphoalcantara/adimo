@@ -1,0 +1,33 @@
+.card{
+    font-size: 0.8rem;
+}
+
+
+.card-title h5{
+    font-size: small;
+}
+
+
+form input{
+    height: 2rem;
+}
+
+
+@media (min-width: 1500px) {
+  .img-analise {
+    height: 18rem;
+    width: 26rem;
+  }
+  .analise-card > .card {
+    width: 45rem;
+    height: 18rem;
+  }
+
+  .card-body {
+    padding: 2.5rem;
+  }
+
+  .container h1 {
+    margin: 1.5em 0;
+  }
+}

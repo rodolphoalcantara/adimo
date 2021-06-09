@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/aprovacao.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="./js/jQuery-3.6.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Análise de crédito</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <div class="container navbar-header">
+            <a href="index.html" class="navbar-brand ml-3">
+              <img
+                src="./img/logo-adimo.png"
+                class="d-inline-block align-top mr-1"
+                alt="logo"
+                style="width: 30px; height: 30px; opacity: 95%"
+              />
+              ADIMO</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container text-center"><h1>Reservas</h1></div>
+
+      <div class="row m-5 content-analise">
+        <div class="col-sm-3">
+          <img src="./img/casa1.jpg" class="img-analise img-thumbnail" />
+        </div>
+        <div class="col-sm-6 analise-card">
+          <div class="card">
+            <div class="card-header">Apartamento - 6º Andar</div>
+            <div class="card-body">
+              <div class="card-title">
+                <h5>
+                  <strong>Endereço:</strong> Rua Mourato Coelho, Vila Madalena
+                  Edifício Praça Madá
+                </h5>
+              </div>
+              <div class="card-text">
+                <form>
+                  <div class="row">
+                    <label class="col-2 text-center" for="nome"
+                      ><strong>Nome: </strong></label
+                    >
+                    <input
+                      class="col-10"
+                      name="nome"
+                      type="text"
+                      value="Rodolpho Alcântara"
+                      disabled
+                    />
+                  </div>
+                  <div class="row">
+                    <label class="col-2 text-center" for="cpf"
+                      ><strong>CPF:</strong></label
+                    >
+                    <input
+                      class="col-10"
+                      type="text"
+                      name="cpf"
+                      value="111.111.111-11"
+                      disabled
+                    />
+                  </div>
+                  <div class="row">
+                    <label class="col-2 text-center" for="email"
+                      ><strong>Email:</strong></label
+                    >
+                    <input
+                      class="col-10"
+                      name="email"
+                      type="text"
+                      value="rodolphoalcantara@adimo.com"
+                      disabled
+                    />
+                  </div>
+                  <div class="row">
+                    <label class="col-2 text-center" for="telefone"
+                      ><strong>Telefone:</strong></label
+                    >
+                    <input
+                      class="col-10"
+                      type="text"
+                      name="telefone"
+                      value="(11) 11111-1111"
+                      disabled
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 align-self-center">
+            <div class="container d-flex flex-column">
+                <button class="btn btn-secondary m-3" type="button">Consultar Crédito</button>
+                <div class="d-flex justify-content-around">
+                <button class="btn btn-success m-3" type="button">Aprovar Reserva</button>
+                <button class="btn btn-danger m-3" type="button">Reprovar Reserva</button>
+            </div>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto py-2 bg-dark">
+      <div class="container d-flex flex-row">
+        <img
+          src="./img/logo-adimo-expanded.png"
+          alt="logo"
+          width="80px"
+          height="80px"
+          style="border-radius: 100%"
+        />
+        <div class="container align-self-center text-center">
+          <p class="text-light">
+            Página desenvolvida por: Aurélio Bispo, Felipe Fabrini, Gessione
+            Freitas e Rodolpho Alcântara
+          </p>
+          <p class="text-light">
+            <small><strong>Programação Web</strong></small
+            ><br />
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
