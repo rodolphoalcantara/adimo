@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="./js/jQuery-3.6.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Adimo - Lista</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <div class="container navbar-header">
+            <a href="index.html" class="navbar-brand ml-3">
+              <img
+                src="./img/logo-adimo.png"
+                class="d-inline-block align-top mr-1"
+                alt="logo"
+                style="width: 30px; height: 30px; opacity: 95%"
+              />
+              ADIMO</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Sua Lista</h1>
+      <br />
+      <div class="card-deck">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./img/casa1.jpg"
+            alt="Imagem de capa do card"
+          />
+          <div class="card-body">
+            <h5 class="card-title">R$ 564.298</h5>
+            <p class="card-text">
+              Rua Mourato Coelho, Vila Madalena Edifício Praça Madá
+            </p>
+            <p>6º andar • Vila Madalena, São Paulo-SP</p>
+            <p class="card-text">
+              <small class="text-muted">Atualizados 3 minutos atrás</small>
+            </p>
+
+            <button
+              type="button"
+              id="lista"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#listaModal"
+            >
+              Reservar
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./img/casa4.jpg"
+            alt="Imagem de capa do card"
+          />
+
+          <div class="card-body">
+            <h5 class="card-title">R$ 3.410.000</h5>
+            <p class="card-text">
+              Rua Engenheiro Edgar Egídio de Souza 170, Higienópolis Ap 41
+            </p>
+
+            <p>Edifício MANGABEIRAS</p>
+            <p>4º andar Higienópolis, São Paulo-SP</p>
+            <p class="card-text">
+              <small class="text-muted">Atualizados 3 minutos atrás</small>
+            </p>
+
+            <button
+              type="button"
+              id="lista"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#listaModal"
+            >
+              Reservar
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./img/casa6.jpg"
+            alt="Imagem de capa do card"
+          />
+
+          <div class="card-body">
+            <h5 class="card-title">R$ 710.000</h5>
+            <p class="card-text">
+              Avenida Doutor Cardoso de Melo 1060, Vila Olímpia Ap 21
+            </p>
+
+            <p>Edifício Palazzo Mona Lisa</p>
+            <p>2º andar</p>
+            <p>Vila Olímpia, São Paulo-SP</p>
+            <p class="card-text">
+              <small class="text-muted">Atualizados 3 minutos atrás</small>
+            </p>
+            <button
+              type="button"
+              id="lista"
+              class="btn btn-primary"
+              data-toggle="modal"
+              data-target="#listaModal"
+            >
+              Reservar
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="listaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="listaModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Confirmado !</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Obrigado pela preferência, sua requisição da reserva será
+            encaminhada para um de nossos analistas e você receberá uma resposta
+            em breve
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Voltar
+            </button>
+            <button type="button" id="mod" class="btn btn-primary">
+              Voltar para pagina inicial
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-auto py-2 bg-dark">
+      <div class="container d-flex flex-row">
+        <img
+          src="./img/logo-adimo-expanded.png"
+          alt="logo"
+          width="80px"
+          height="80px"
+          style="border-radius: 100%"
+        />
+        <div class="container align-self-center text-center">
+          <p class="text-light">
+            Página desenvolvida por: Aurélio Bispo, Felipe Fabrini, Gessione
+            Freitas e Rodolpho Alcântara
+          </p>
+          <p class="text-light">
+            <small><strong>Programação Web</strong></small
+            ><br />
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/lista.js"></script>
+  </body>
+</html>
