@@ -1,7 +1,7 @@
 $("nav a").click(function navigate(e) {
   e.preventDefault();
   var id = $(this).attr("href");
-  if (id != "login.html") {
+  if (id != "login.html" && id != "lista.html") {
     var targetOffset = $(id).offset().top;
     var menuHeight = $("nav").innerHeight();
 
@@ -12,7 +12,11 @@ $("nav a").click(function navigate(e) {
       500
     );
   } else {
+    if (id == "login.html") {
       window.location.href = "login.html";
+    } else {
+      window.location.href = "lista.html";
+    }
   }
 });
 

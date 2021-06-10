@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <!--<link rel="stylesheet" href="css/style.css" />-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="./js/jQuery-3.6.0.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <title>Adimo - Lista</title>
   </head>
-  <body>
+  <body class="d-flex flex-column h-100">
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -32,8 +32,8 @@
     </header>
 
     <main>
-      <h1>Sua Lista</h1>
-      <br />
+      <h1 class="mt-3 text-center">Sua Lista</h1>
+      <div class="d-flex flex-row justify-content-between p-5">
       <div class="card-deck">
         <div class="card">
           <img
@@ -42,7 +42,7 @@
             alt="Imagem de capa do card"
           />
           <div class="card-body">
-            <h5 class="card-title">R$ 564.298</h5>
+            <h5 class="card-title">R$ 2.600,00</h5>
             <p class="card-text">
               Rua Mourato Coelho, Vila Madalena Edifício Praça Madá
             </p>
@@ -70,7 +70,7 @@
           />
 
           <div class="card-body">
-            <h5 class="card-title">R$ 3.410.000</h5>
+            <h5 class="card-title">R$ 4.000,00</h5>
             <p class="card-text">
               Rua Engenheiro Edgar Egídio de Souza 170, Higienópolis Ap 41
             </p>
@@ -100,7 +100,7 @@
           />
 
           <div class="card-body">
-            <h5 class="card-title">R$ 710.000</h5>
+            <h5 class="card-title">R$ 2.800,00</h5>
             <p class="card-text">
               Avenida Doutor Cardoso de Melo 1060, Vila Olímpia Ap 21
             </p>
@@ -123,6 +123,7 @@
           </div>
         </div>
       </div>
+    </div>
     </main>
 
     <!-- Modal -->
