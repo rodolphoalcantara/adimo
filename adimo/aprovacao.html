@@ -34,14 +34,15 @@
     <main>
       <div class="container text-center"><h1>Reservas</h1></div>
 
-      <div class="row m-5 content-analise">
-        <div class="col-sm-3">
-          <img src="./img/casa1.jpg" class="img-analise img-thumbnail" />
-        </div>
-        <div class="col-sm-6 analise-card">
+      <div class="content-analise">
+        <div class="analise-card">
+          <div class="img-container">
+            <img src="./img/casa1.jpg" class="img-analise img-thumbnail" />
+          </div>
+
           <div class="card">
             <div class="card-header">Apartamento - 6º Andar</div>
-            <div class="card-body">
+            <div class="card-body p-2">
               <div class="card-title">
                 <h5>
                   <strong>Endereço:</strong> Rua Mourato Coelho, Vila Madalena
@@ -50,48 +51,44 @@
               </div>
               <div class="card-text">
                 <form>
-                  <div class="row">
-                    <label class="col-2 text-center" for="nome"
+                  <div class="container">
+                    <label class="text-center" for="nome"
                       ><strong>Nome: </strong></label
                     >
                     <input
-                      class="col-10"
                       name="nome"
                       type="text"
                       value="Rodolpho Alcântara"
                       disabled
                     />
                   </div>
-                  <div class="row">
-                    <label class="col-2 text-center" for="cpf"
+                  <div class="container">
+                    <label class="text-center" for="cpf"
                       ><strong>CPF:</strong></label
                     >
                     <input
-                      class="col-10"
                       type="text"
                       name="cpf"
                       value="111.111.111-11"
                       disabled
                     />
                   </div>
-                  <div class="row">
-                    <label class="col-2 text-center" for="email"
+                  <div class="container">
+                    <label class="text-center" for="email"
                       ><strong>Email:</strong></label
                     >
                     <input
-                      class="col-10"
                       name="email"
                       type="text"
                       value="rodolphoalcantara@adimo.com"
                       disabled
                     />
                   </div>
-                  <div class="row">
-                    <label class="col-2 text-center" for="telefone"
+                  <div class="container">
+                    <label class="text-center" for="telefone"
                       ><strong>Telefone:</strong></label
                     >
                     <input
-                      class="col-10"
                       type="text"
                       name="telefone"
                       value="(11) 11111-1111"
@@ -102,15 +99,119 @@
               </div>
             </div>
           </div>
+
+          <div class="align-self-center">
+            <div class="d-flex flex-column text-center button-container m-3">
+              <button
+                class="btn btn-secondary mt-3 mb-3 btn-credito"
+                type="button"
+              >
+                Consultar Crédito
+              </button>
+              <div class="d-flex justify-content-around">
+                <button class="btn btn-success mr-3" type="button">
+                  Aprovar Reserva
+                </button>
+                <button
+                  class="btn btn-danger ml-3"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#reprovarModal"
+                >
+                  Reprovar Reserva
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-3 align-self-center">
-            <div class="container d-flex flex-column">
-                <button class="btn btn-secondary m-3" type="button">Consultar Crédito</button>
-                <div class="d-flex justify-content-around">
-                <button class="btn btn-success m-3" type="button">Aprovar Reserva</button>
-                <button class="btn btn-danger m-3" type="button">Reprovar Reserva</button>
+        <div class="analise-card">
+          <div class="img-container">
+            <img src="./img/casa9.jpg" class="img-analise img-thumbnail" />
+          </div>
+
+          <div class="card">
+            <div class="card-header">Apartamento - 21º andar</div>
+            <div class="card-body p-2">
+              <div class="card-title">
+                <h5>
+                  <strong>Endereço:</strong> Rua Maratona, Campo Belo Edifício Quartier Vila Mascote
+                </h5>
+              </div>
+              <div class="card-text">
+                <form>
+                  <div class="container">
+                    <label class="text-center" for="nome"
+                      ><strong>Nome: </strong></label
+                    >
+                    <input
+                      name="nome"
+                      type="text"
+                      value="Naga Freitas"
+                      disabled
+                    />
+                  </div>
+                  <div class="container">
+                    <label class="text-center" for="cpf"
+                      ><strong>CPF:</strong></label
+                    >
+                    <input
+                      type="text"
+                      name="cpf"
+                      value="333.333.333-33"
+                      disabled
+                    />
+                  </div>
+                  <div class="container">
+                    <label class="text-center" for="email"
+                      ><strong>Email:</strong></label
+                    >
+                    <input
+                      name="email"
+                      type="text"
+                      value="nagafreitas@adimo.com"
+                      disabled
+                    />
+                  </div>
+                  <div class="container">
+                    <label class="text-center" for="telefone"
+                      ><strong>Telefone:</strong></label
+                    >
+                    <input
+                      type="text"
+                      name="telefone"
+                      value="(22) 22222-2222"
+                      disabled
+                    />
+                  </div>
+                </form>
+              </div>
             </div>
+          </div>
+
+          <div class="align-self-center">
+            <div class="d-flex flex-column text-center button-container m-3">
+              <button
+                class="btn btn-secondary mt-3 mb-3 btn-credito"
+                type="button"
+              >
+                Consultar Crédito
+              </button>
+
+              <div class="d-flex justify-content-around">
+                <button class="btn btn-success mr-3" type="button">
+                  Aprovar Reserva
+                </button>
+                <button
+                  class="btn btn-danger ml-3"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#reprovarModal"
+                >
+                  Reprovar Reserva
+                </button>
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </main>
@@ -136,5 +237,50 @@
         </div>
       </div>
     </footer>
+
+    <div
+      class="modal fade"
+      id="reprovarModal"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Reprovar Reserva
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <h4 class="p-3 text-center">Descreva o motivo da reprovação</h4>
+              <textarea name="txtModal" id="txtModal"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/aprovacao.js"></script>
   </body>
 </html>
